@@ -3,7 +3,7 @@ package Supermercado;
 import java.util.ArrayList;
 
 /**
- * 
+ * clase de una tienda
  * @author pablo
  * @version 1.0
  * @since 23-03-2024
