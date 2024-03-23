@@ -11,6 +11,17 @@ public class Producto {
 		this.precio = precio;
 		this.enStock = enStock;
 	}
+	
+	public boolean vender() {
+		if (enStock) {
+			enStock = false;
+			System.out.println("Se ha vendido con exito");
+			return true;
+		}else {
+			System.out.println("Ahora mismo no nos queda ese producto");
+			return false;
+		}	
+	}
 
 	public String getNombre() {
 		return nombre;
