@@ -1,5 +1,7 @@
 package Supermercado;
 
+import java.util.Objects;
+
 /**
  * clase de un producto de una tienda
  * 
@@ -63,6 +65,23 @@ public class Producto {
 	@Override
 	public String toString() {
 		return "Producto [nombre=" + nombre + ", precio=" + precio + ", enStock=" + enStock + "]";
+	}
+	
+
+/**
+ * Metodo para saber si n producto es igual que otro
+ * 
+ */
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Producto other = (Producto) obj;
+		return Objects.equals(nombre, other.nombre);
 	}
 
 	/**

@@ -24,13 +24,33 @@ public class Tienda {
 	}
 
 	/**
-	 * Metodo para agregar un producto
+	 * Metodo que ya no se utiliza
 	 * 
-	 * @param producto El producto que quieres agregar
+	 * @deprecated este metodo ya no se utiliza
+	 * @see #nuevoAgregarProducto(Producto)
 	 */
 	public void agregarProducto(Producto producto) {
 		productos.add(producto);
 		System.out.println("Se ha añadido el producto a la tienda");
+	}
+
+	/**
+	 * Metodo nuevo para agregar un producto
+	 * 
+	 * @param producto es el producto que quieres agregar
+	 * @return devuelve false si no se puede agregar y true si se puede agregar
+	 */
+
+	public boolean nuevoAgregarProducto(Producto producto) {
+		if (productos.contains(producto)) {
+			System.out.println("ya esta agregado este producto");
+			return false;
+		} else {
+			productos.add(producto);
+			System.out.println("El producto se ha agregado correctamente");
+			return true;
+		}
+
 	}
 
 	/**
