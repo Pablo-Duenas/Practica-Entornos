@@ -44,6 +44,16 @@ public class Tienda {
 	}
 
 	/**
+	 * metodo que imprime toda la informacion de los productos que hay en la tienda
+	 * 
+	 */
+	public void imprimir() {
+		for (Producto producto : productos) {
+			System.out.println(producto.toString());
+		}
+	}
+
+	/**
 	 * Metodo para saber el nombre de la tienda
 	 * 
 	 * @return El nombre de la tienda

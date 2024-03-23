@@ -56,6 +56,16 @@ public class Producto {
 	}
 
 	/**
+	 * Metodo toString
+	 * 
+	 * @return devuelve el nombre, precio y si esta o no en stock de un producto
+	 */
+	@Override
+	public String toString() {
+		return "Producto [nombre=" + nombre + ", precio=" + precio + ", enStock=" + enStock + "]";
+	}
+
+	/**
 	 * Metodo del nombre
 	 * 
 	 * @return devuelve el nombre del producto
