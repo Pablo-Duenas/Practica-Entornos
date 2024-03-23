@@ -22,6 +22,11 @@ public class Producto {
 			return false;
 		}	
 	}
+	public void reponer() {
+		enStock = true;
+		System.out.println("Se acaba de reponer");
+		
+	}
 
 	public String getNombre() {
 		return nombre;
